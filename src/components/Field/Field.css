@@ -1,0 +1,66 @@
+.field {
+    border: 1px solid;
+    width: 600px;
+}
+
+.row {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+.row span {
+    width: 6px;
+    height: 6px;
+    margin: 0;
+    padding: 0;
+}
+
+#active {
+    width: 4px;
+    height: 4px;
+    border: 1px solid grey;
+    background-color: greenyellow;
+}
+
+.how-long-0 {
+    background-color: rgb(0, 100, 200);
+}
+
+.how-long-1 {
+    background-color: rgb(20, 110, 200);
+}
+
+.how-long-2 {
+    background-color: rgb(40, 120, 200);
+}
+
+.how-long-3 {
+    background-color: rgb(60, 130, 200);
+}
+
+.how-long-4 {
+    background-color: rgb(80, 140, 200);
+}
+
+.how-long-5 {
+    background-color: rgb(100, 150, 200);
+}
+
+.how-long-6 {
+    background-color: rgb(120, 160, 200);
+}
+
+.how-long-7 {
+    background-color: rgb(140, 180, 200);
+}
+
+.how-long-8 {
+    background-color: rgb(160, 200, 200);
+}
+
+.how-long-9 {
+    background-color: unset;
+}
