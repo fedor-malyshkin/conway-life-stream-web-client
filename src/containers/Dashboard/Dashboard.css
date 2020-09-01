@@ -1,0 +1,20 @@
+.dashboard {
+    width: min-content;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+}
+
+.infoTable {
+    width: 80%;
+}
+
+.controls {
+    width: 20%;
+}
+
+button {
+    width: 100%;
+}
