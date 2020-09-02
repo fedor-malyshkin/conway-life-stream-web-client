@@ -3,6 +3,7 @@ import './Dashboard.css';
 import Field from "../../components/Field/Field";
 import {baseUrl} from "../../App";
 import FieldInfo from "../../components/FieldInfo/FieldInfo";
+import html2canvas from "html2canvas";
 
 
 const Dashboard = (props) => {
@@ -102,6 +103,11 @@ const Dashboard = (props) => {
                 fieldStateNotSync = composeFieldStateFromUpdate(msg, fieldStateNotSync)
                 updateFieldState(fieldStateNotSync)
             }
+            if (msg.type === 'game-turn-ended') {
+                // html2canvas(document.getElementById('field')).then(function (canvas) {
+                //     document.body.appendChild(canvas);
+                // });
+            }
             statisticsNotSync = recalculateStatistics(rawMessage.data, statisticsNotSync)
             updateWsStatistics(statisticsNotSync)
         }
@@ -138,7 +144,7 @@ const Dashboard = (props) => {
                     {stopButton}
                 </div>
             </div>
-            <div className="field">
+            <div id="field" className="field">
                 {field}
             </div>
         </div>

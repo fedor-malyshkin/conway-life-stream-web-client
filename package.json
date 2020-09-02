@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "html2canvas": "^1.0.0-rc.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "node server.js",
