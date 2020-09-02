@@ -12,7 +12,7 @@ Listen and present current streamed data from the server. I'm not a professional
 $ heroku login
 $ heroku create
 ```
-In my case it was: https://secret-retreat-65283.herokuapp.com/
+In my case it was: http://secret-retreat-65283.herokuapp.com/
 ```shell script
 $ git push heroku main
 $ heroku ps:scale web=1

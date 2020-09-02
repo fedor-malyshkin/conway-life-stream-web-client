@@ -90,11 +90,11 @@ const Dashboard = (props) => {
 
         // websocket onopen event listener
         ws.onopen = () => {
-            console.log("connected websocket");
+            // console.log("connected websocket");
         };
         ws.onmessage = (rawMessage) => {
             const msg = JSON.parse(rawMessage.data);
-            console.log("msg.type: " + msg.type)
+            // console.log("msg.type: " + msg.type)
             if (msg.type === 'snapshot') {
                 fieldStateNotSync = composeFieldStateFromSnapshot(msg)
                 updateFieldState(fieldStateNotSync)
@@ -112,11 +112,11 @@ const Dashboard = (props) => {
             updateWsStatistics(statisticsNotSync)
         }
         ws.onclose = (event) => {
-            console.log(" websocket closed: " + event);
+            // console.log(" websocket closed: " + event);
             updateWsState(null)
         }
         ws.onerror = (event) => {
-            console.log(" websocket error: " + event);
+            // console.log(" websocket error: " + event);
             updateWsState(null)
         }
         updateWsState(ws)
