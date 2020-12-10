@@ -1,6 +1,6 @@
 {
   "name": "conway-life-stream-web-client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "dotenv": "^8.2.0",
